@@ -80,7 +80,9 @@
 	</profiles>
 	<properties>
 		<!-- Common libs -->
-		<spring_version>2.5.6.SEC03</spring_version>
+		<spring_version>3.2.14.RELEASE</spring_version>
+		<aopalliance_version>1.0</aopalliance_version>
+		<httpinvoker_version>2.0.6.RELEASE</httpinvoker_version>
 		<javassist_version>3.15.0-GA</javassist_version>
 		<netty_version>3.2.5.Final</netty_version>
 		<mina_version>1.1.7</mina_version>
@@ -132,9 +134,34 @@
 		<dependencies>
 			<!-- Common libs -->
 			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring</artifactId>
-				<version>${spring_version}</version>
+			  <groupId>org.springframework.integration</groupId>
+			  <artifactId>spring-integration-httpinvoker</artifactId>
+			  <version>${httpinvoker_version}</version>
+			</dependency>
+			<dependency>
+			  <groupId>org.springframework</groupId>
+			  <artifactId>spring-beans</artifactId>
+			  <version>${spring_version}</version>
+			</dependency>
+			<dependency>
+			  <groupId>org.springframework</groupId>
+			  <artifactId>spring-context</artifactId>
+			  <version>${spring_version}</version>
+			</dependency>
+			<dependency>
+			  <groupId>org.springframework</groupId>
+			  <artifactId>spring-core</artifactId>
+			  <version>${spring_version}</version>
+			</dependency>
+			<dependency>
+			  <groupId>aopalliance</groupId>
+			  <artifactId>aopalliance</artifactId>
+			  <version>${aopalliance_version}</version>
+			</dependency>
+			<dependency>
+			  <groupId>org.springframework</groupId>
+			  <artifactId>spring-context-support</artifactId>
+			  <version>${spring_version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.javassist</groupId>
