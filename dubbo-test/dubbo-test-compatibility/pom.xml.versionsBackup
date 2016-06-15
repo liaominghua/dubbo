@@ -18,26 +18,21 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.alibaba</groupId>
-		<artifactId>dubbo-registry</artifactId>
-		<version>2.5.5-SNAPSHOT</version>
+		<artifactId>dubbo-test</artifactId>
+		<version>2.5.4-SNAPSHOT</version>
 	</parent>
-	<artifactId>dubbo-registry-redis</artifactId>
+	<artifactId>dubbo-test-compatibility</artifactId>
 	<packaging>jar</packaging>
 	<name>${project.artifactId}</name>
-	<description>The redis registry module of dubbo project</description>
+	<description>The technology compatibility kit(TCK) test module of dubbo project</description>
 	<properties>
 		<skip_maven_deploy>true</skip_maven_deploy>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>com.alibaba</groupId>
-			<artifactId>dubbo-registry-api</artifactId>
+			<artifactId>dubbo</artifactId>
 			<version>${project.parent.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>redis.clients</groupId>
-			<artifactId>jedis</artifactId>
-			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 </project>
